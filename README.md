@@ -1,7 +1,3 @@
-# Agent Skills
-
-Reusable agent skills for planning, explanations, and TypeScript, React, and Node.js development workflows.
-
 ## Available Skills
 
 | Skill | Description |
