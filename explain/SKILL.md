@@ -1,6 +1,6 @@
 ---
 name: explain
-description: Guides clear explanations. Use when explaining something to the user.
+description: Guides clear communication. Use when presenting information to the user.
 ---
 
 Answer the exact question in language the user can understand. Lead with the direct answer. Prefer concrete behavior and examples over implementation details. Include technical details only when requested or necessary.
