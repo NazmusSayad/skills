@@ -13,13 +13,11 @@
 Install all skills:
 
 ```shell
-skills add NazmusSayad/skills
+npx skills add NazmusSayad/skills
 ```
 
 Install a specific skill:
 
 ```shell
-skills add NazmusSayad/skills -s npm
+npx skills add NazmusSayad/skills -s npm
 ```
-
-Replace `npm` with any skill listed above.
