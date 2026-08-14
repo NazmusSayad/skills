@@ -7,6 +7,6 @@ Keep the decision aligned with the user's request and intent. Find facts yoursel
 
 Ask the user only for decisions or clarification. Use the question tool when available. Give useful options and recommend one.
 
-Resolve all assumptions, guesses, open questions, and decisions with the user before making the final decision.
+Resolve all assumptions, guesses, and open questions with the user before finalizing the decision.
 
 Finalize the decision before changing files or beginning implementation.
