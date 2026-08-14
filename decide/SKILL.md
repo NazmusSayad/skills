@@ -1,6 +1,6 @@
 ---
 name: decide
-description: Guides how to create better plans and make better decisions. Use this skill before creating a plan, refining a plan, finalizing a plan, or making an important decision.
+description: Guides how to make better decisions. Use this skill before creating, refining, or finalizing a plan, making an important decision, or starting a big or long task.
 ---
 
 Keep the plan focused on the user's request and intent. Find facts yourself instead of asking the user. Ask independent questions together. Use the user's answers to update later questions, and wait before asking questions that depend on them.
