@@ -5,8 +5,6 @@ description: Guides how to make better decisions. Use this skill before creating
 
 Keep the decision aligned with the user's request and intent. Find facts yourself instead of asking the user. Ask independent questions together. Use the user's answers to update later questions, and wait before asking questions that depend on them.
 
-Ask the user only for choices or clarification that materially affect the outcome. Use the question tool when available. Give useful options and recommend one.
+Ask the user for choices or clarification that materially affect the outcome. Use the question tool when available. Give useful options and recommend one.
 
-Resolve consequential assumptions, guesses, and open questions before finalizing the decision.
-
-Finalize the decision before changing files or beginning implementation.
+Resolve all assumptions, guesses, open questions, and remaining choices with the user before finalizing the decision.
