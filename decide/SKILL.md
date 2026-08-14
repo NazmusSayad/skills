@@ -1,5 +1,5 @@
 ---
-name: planning
+name: decide
 description: Guides how to create better plans and make better decisions. Use this skill before creating a plan, refining a plan, finalizing a plan, or making an important decision.
 ---
 
