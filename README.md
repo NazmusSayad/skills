@@ -2,7 +2,7 @@
 
 | Skill        | Description                                                             |
 | ------------ | ----------------------------------------------------------------------- |
-| `decide`     | Makes focused decisions while resolving assumptions with the user.      |
+| `behave`     | Makes focused decisions while resolving assumptions with the user.      |
 | `explain`    | Produces direct, useful explanations tailored to the user's question.   |
 | `docs`       | Creates documentation tailored to its intended audience.                |
 | `npm`        | Manages Node.js dependencies, scripts, and package execution with `ni`. |

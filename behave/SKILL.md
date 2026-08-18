@@ -1,5 +1,5 @@
 ---
-name: decide
+name: behave
 description: Guides how to make better decisions. Use this skill before creating, refining, or finalizing a plan, making an important decision, or starting a big or long task.
 ---
 
