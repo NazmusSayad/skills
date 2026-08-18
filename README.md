@@ -1,13 +1,13 @@
 ## Available Skills
 
-| Skill        | Description                                                             |
-| ------------ | ----------------------------------------------------------------------- |
-| `behave`     | Makes focused decisions while resolving assumptions with the user.      |
-| `explain`    | Produces direct, useful explanations tailored to the user's question.   |
-| `docs`       | Creates documentation tailored to its intended audience.                |
-| `npm`        | Manages Node.js dependencies, scripts, and package execution with `ni`. |
-| `react`      | Provides conventions and best practices for React components and hooks. |
-| `typescript` | Provides concise TypeScript typing and asynchronous code guidelines.    |
+| Skill        | Description                                                                                    |
+| ------------ | ---------------------------------------------------------------------------------------------- |
+| `behave`     | Guides how to behave while planning, deciding, and executing work.                             |
+| `explain`    | Guides clear communication when presenting information to the user.                            |
+| `docs`       | Guides documentation for the right audience: READMEs, guides, tutorials, or references.        |
+| `npm`        | Installs, upgrades, removes, and runs npm dependencies and scripts. Must use for any npm task. |
+| `react`      | React code style, conventions, and best practices for clean, scalable applications.            |
+| `typescript` | TypeScript best practices for clean, maintainable, and optimized code.                         |
 
 ## Installation
 
