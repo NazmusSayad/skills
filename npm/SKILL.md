@@ -1,6 +1,6 @@
 ---
 name: npm
-description: Installs, upgrades, and removes Node.js/npm dependencies, runs scripts, executes packages, and manages package workflows. MUST USE this skill for any task involving npm, npx, pnpm, yarn, or bun, including package.json dependency changes, lockfile updates, install/update/uninstall actions, and script execution.
+description: Installs, upgrades, and removes Node.js/npm dependencies, runs scripts, executes packages, and manages package workflows. MUST USE for any task involving npm, npx, pnpm, yarn, or bun, including package.json dependency changes, lockfile updates, install/update/uninstall actions, and script execution.
 ---
 
 ## Commands
