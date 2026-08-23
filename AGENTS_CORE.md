@@ -22,9 +22,7 @@ Use the simplest clear and direct solution that fully satisfies the request. Do 
 
 Use explicit logic to prevent ambiguity and implicit fallbacks. For example, prefer `if true: 1; if false: 0; else: exception` over `if true: 1; else: 0`.
 
-Do not write comments unless instructed.
-
-Do not refactor, clean up, reformat, rename, or otherwise improve unrelated work. Remove code made unused by your changes, but don't remove pre-existing dead code unless asked.
+Do not write comments unless instructed. Do not refactor, clean up, reformat, rename, or otherwise improve unrelated work. Remove code made unused by your changes, but don't remove pre-existing dead code unless asked.
 
 ## Verification
 
