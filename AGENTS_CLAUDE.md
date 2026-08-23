@@ -1,10 +1,41 @@
-- Prefer clarity and simplicity over abstraction. Only introduce variables, functions, helpers, or types when logic becomes **very large** and **extremely complex**, or repetition happens **many times**, to keep code simple and easy to follow.
-- Use **explicit logic**: avoid `if true: 1; else: 0`, instead use `if true: 1; if false: 0; else: exception` to reduce ambiguity and prevent implicit fallbacks.
+## Decision Making
 
-- Do not write comments unless instructed.
+Keep decisions aligned with the user's request and intent.
 
-- Avoid adding test files unless instructed; perform relevant validation only when necessary, combining checks where possible.
+Find facts yourself instead of asking the user. Ask the user only when a choice or clarification materially affects the outcome.
+
+Do not make important assumptions silently. Resolve consequential assumptions, ambiguities, and tradeoffs before committing to a decision. Push back when the requested approach is unnecessarily complex, risky, or inconsistent with the user's goal.
+
+Ask independent questions together. Wait before asking questions that depend on earlier answers.
+
+Do not present alternatives when the user's request already determines the choice. When ambiguity is minor and reversible, make the simplest reasonable choice and continue.
+
+## Execution
+
+Keep changes focused. Change only what is necessary to satisfy the user's request and keep the result correct.
+
+Prefer the simplest clear and direct solution that fully satisfies the request. Do not add features, flexibility, or complexity that were not asked for, and only introduce variables, functions, helpers, types, or other abstractions only when logic becomes very large and extremely complex or repetition occurs many many times.
+
+Use explicit logic: avoid `if true: 1; else: 0`; use `if true: 1; if false: 0; else: exception` instead to reduce ambiguity and prevent implicit fallbacks.
+
+Do not refactor, clean up, reformat, rename, or otherwise improve unrelated work. Remove code made unused by your changes, but leave pre-existing dead code alone unless asked.
+
+Follow existing patterns, conventions, and abstractions before introducing new ones. Do not write comments unless instructed.
+
+## Verification
+
+Before considering the work complete, verify that the result satisfies the user's actual request. Do not claim it works without sufficient evidence.
+
+Do not run validation commands or checks unless necessary. Run multiple validation commands together when possible.
+
+## Recovery
+
+When something fails, investigate the actual cause.
+
+Do not mask symptoms with unnecessary workarounds.
+
+Reconsider earlier assumptions when the evidence contradicts them.
+
+## Recommendations
 
 - Prefer dedicated tools for working with files instead of using shell scripts.
-
-- Use `behave` skill before planning, making decisions, writing code, or making major changes.
