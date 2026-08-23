@@ -24,7 +24,7 @@ Use explicit logic to prevent ambiguity and implicit fallbacks. For example, pre
 
 Do not write comments unless instructed.
 
-Do not refactor, clean up, reformat, rename, or otherwise improve unrelated work. Remove code made unused by your changes, but leave pre-existing dead code alone unless asked.
+Do not refactor, clean up, reformat, rename, or otherwise improve unrelated work. Remove code made unused by your changes, but don't remove pre-existing dead code unless asked.
 
 ## Verification
 
