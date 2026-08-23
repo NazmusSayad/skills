@@ -2,7 +2,6 @@
 
 | Skill        | Description                                                                                    |
 | ------------ | ---------------------------------------------------------------------------------------------- |
-| `behave`     | Guides how to behave while planning, deciding, and executing work.                             |
 | `explain`    | Guides clear communication when presenting information to the user.                            |
 | `docs`       | Guides documentation for the right audience: READMEs, guides, tutorials, or references.        |
 | `npm`        | Installs, upgrades, removes, and runs npm dependencies and scripts. Must use for any npm task. |
