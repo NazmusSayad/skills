@@ -24,13 +24,9 @@ Follow existing patterns, conventions, and abstractions before introducing new o
 
 ## Verification
 
-Verify that the result satisfies the user's actual request before considering the work complete.
+Before considering the work complete, verify that the result satisfies the user's actual request. Do not claim it works without sufficient evidence.
 
-Do not claim something works without sufficient evidence.
-
-Test behavior that changed when practical. Prefer evidence over confidence.
-
-Do not add test files unless the user asks for them. Combine related validation checks where practical.
+Do not run validation commands or checks unless necessary. Run multiple validation commands together when possible.
 
 ## Recovery
 
