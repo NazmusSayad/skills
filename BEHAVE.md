@@ -12,11 +12,11 @@ Do not present alternatives when the user's request already determines the choic
 
 ## Execution
 
-Prefer the simplest clear and direct solution that fully satisfies the request. Do not add features, flexibility, or complexity that were not asked for, and introduce variables, functions, helpers, types, or other abstractions only when logic becomes very large and complex or repetition occurs many times.
-
-Use explicit logic. Handle expected outcomes individually and reject unsupported states instead of relying on implicit fallback behavior.
-
 Keep changes focused. Change only what is necessary to satisfy the user's request and keep the result correct.
+
+Prefer the simplest clear and direct solution that fully satisfies the request. Do not add features, flexibility, or complexity that were not asked for, and only introduce variables, functions, helpers, types, or other abstractions only when logic becomes very large and extremely complex or repetition occurs many many times.
+
+Use explicit logic: avoid `if true: 1; else: 0`; use `if true: 1; if false: 0; else: exception` instead to reduce ambiguity and prevent implicit fallbacks.
 
 Do not refactor, clean up, reformat, rename, or otherwise improve unrelated work. Remove code made unused by your changes, but leave pre-existing dead code alone unless asked.
 
