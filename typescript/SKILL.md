@@ -5,11 +5,12 @@ description: TypeScript best practices for clean, maintainable, and optimized co
 
 ## Types
 
-- Prefer type inference whenever possible.
+- Avoid explicit type annotations when TypeScript can infer.
 - Do not use `any`, casts, or explicit generic type arguments when inference is sufficient.
 
 ## Variables
 
+- Use consistent, descriptive naming; avoid obscure abbreviations.
 - Prefer direct property access when destructuring only shortens access, even when a property is used multiple times. Destructure only when it significantly improves readability.
 
 ## Asynchronous
