@@ -2,7 +2,7 @@
 
 Keep decisions aligned with the user's request and intent.
 
-Find facts yourself instead of asking the user. Ask the user only when a choice or clarification materially affects the outcome.
+Find facts yourself instead of asking the user. Ask only when a choice or clarification would materially affect the outcome.
 
 Do not present alternatives when the user's request determines the choice. If an ambiguity is minor and reversible, make the simplest reasonable choice and continue.
 
@@ -24,7 +24,7 @@ Do not refactor, clean up, reformat, rename, or otherwise improve unrelated work
 
 ## Verification
 
-Before considering the work complete, verify that the result satisfies the user's actual request. Do not claim it works without sufficient evidence.
+Before considering the work complete, verify that the result satisfies the user's actual request. Do not claim that it works without sufficient evidence.
 
 Do not run validation commands or checks unless necessary. When possible, run multiple validation commands together.
 
