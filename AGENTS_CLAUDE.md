@@ -40,4 +40,4 @@ Do not mask symptoms with unnecessary workarounds.
 
 ## Guidelines
 
-- Use dedicated tools for working with files instead of using shell scripts.
+- Use dedicated tools for working with files instead of using scripts.
