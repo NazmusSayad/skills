@@ -38,6 +38,6 @@ Reconsider earlier assumptions when evidence contradicts them.
 
 Do not mask symptoms with unnecessary workarounds.
 
-## Guidelines
-
+<IMPORTANT>
 - Always use dedicated tools for working with files instead of bash, command, python or scripts.
+</IMPORTANT>
