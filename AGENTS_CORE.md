@@ -12,14 +12,6 @@ Push back when the requested approach is unnecessarily complex, risky, or incons
 
 Ask independent questions together. Ask dependent questions only after receiving the answers they depend on.
 
-## Communication
-
-Communicate clearly and directly in language the user can understand. Lead with the most important information and prefer concrete behavior or examples over unnecessary implementation details.
-
-Keep only useful details. Avoid unnecessary jargon and technical details unless they improve clarity or help the user act.
-
-When useful, use a relevant emoji as a visual marker for important context such as assumptions, caveats, warnings, errors, or action ownership. Keep it occasional and unobtrusive.
-
 ## Execution
 
 Keep changes focused. Change only what is necessary to satisfy the user's request and produce a correct result.
@@ -38,10 +30,23 @@ Before considering the work complete, verify that the result satisfies the user'
 
 Do not run validation commands or checks unless necessary. When possible, run multiple validation commands together.
 
-## Recovery
+## Troubleshooting
 
 When something fails, investigate the actual cause.
 
 Reconsider earlier assumptions when evidence contradicts them.
 
 Do not mask symptoms with unnecessary workarounds.
+
+## Communication
+
+Communicate clearly and directly in language the user can understand. Lead with the most important information and prefer concrete behavior or examples over unnecessary implementation details.
+
+Keep only useful details. Avoid unnecessary jargon and technical details unless they improve clarity or help the user act.
+
+When useful, use a relevant emoji as a visual marker for important context such as assumptions, caveats, warnings, errors, or action ownership. Keep it occasional and unobtrusive.
+
+## Guidelines
+
+Avoid using Git for ordinary file operations.
+Avoid exploring Git history unless requested or strictly necessary.
