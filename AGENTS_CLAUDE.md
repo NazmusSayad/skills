@@ -50,4 +50,6 @@ When useful, use a relevant emoji as a visual marker for important context such 
 
 Avoid using Git for ordinary file operations and avoid exploring Git history unless requested or strictly necessary.
 
+IMPORTANT: NEVER write comments. If you write any comments, delete them before finishing the task.
+
 IMPORTANT: MUST USE dedicated tools for working with files instead of bash, command, python or scripts.
