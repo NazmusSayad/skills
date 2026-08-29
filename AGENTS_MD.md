@@ -48,6 +48,8 @@ When useful, use a relevant emoji as a visual marker for important context such 
 
 ## Guidelines
 
+Do not run Git commands that modify repository state unless requested.
+
 Avoid using Git for ordinary file operations and avoid exploring Git history unless requested or strictly necessary.
 
 Avoid disrupting development servers and watch modes unless explicitly requested. If something conflicts or behaves unexpectedly, notify the user rather than interfering with it.
