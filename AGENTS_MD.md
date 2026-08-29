@@ -48,7 +48,7 @@ When useful, use a relevant emoji as a visual marker for important context such 
 
 ## Guidelines
 
-Do not run Git commands that modify repository state unless requested.
+Do not execute any Git write operation unless explicitly requested.
 
 Avoid using Git for ordinary file operations and avoid exploring Git history unless requested or strictly necessary.
 
