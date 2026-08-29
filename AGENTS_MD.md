@@ -28,7 +28,7 @@ Do not write comments unless instructed. Do not refactor, clean up, reformat, re
 
 Before considering the work complete, verify that the result satisfies the user's actual request. Do not claim that it works without sufficient evidence.
 
-Do not run validation commands or checks unless necessary. When possible, run multiple validation commands together.
+Do not write tests or run validation commands or checks unless requested or really necessary. When possible, run multiple validation commands together.
 
 ## Troubleshooting
 
