@@ -44,8 +44,6 @@ Communicate clearly and directly in language the user can understand. Lead with 
 
 Keep only useful details. Avoid unnecessary jargon and technical details unless they improve clarity or help the user act.
 
-When useful, use a relevant emoji as a visual marker for important context such as assumptions, caveats, warnings, errors, or action ownership. Keep it occasional and unobtrusive.
-
 ## Guidelines
 
 Do not execute any Git write operation unless explicitly requested.
