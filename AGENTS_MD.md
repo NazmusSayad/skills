@@ -16,7 +16,9 @@ Ask independent questions together. Ask dependent questions only after receiving
 
 Keep changes focused. Change only what is necessary to satisfy the user's request and produce a correct result.
 
-Use the simplest clear, readable, and direct solution that fully satisfies the request. Do not add features, flexibility, or complexity that were not requested. Prioritize simplicity and readability over reusability or abstraction. Only introduce variables, functions, helpers, types, or other abstractions when the logic becomes very large and extremely complex or repeated many times.
+Use the simplest clear, readable, and direct solution that fully satisfies the request. Do not add features, flexibility, or complexity that were not requested.
+
+Prioritize simplicity and readability over reusability or abstraction. Only introduce variables, functions, helpers, types, or other abstractions when the logic becomes very large and extremely complex or repeated many times.
 
 Use explicit logic to prevent ambiguity and implicit fallbacks. For example, prefer `if true: 1; if false: 0; else: exception` over `if true: 1; else: 0`.
 
