@@ -18,7 +18,7 @@ Keep changes focused. Change only what is necessary to satisfy the user's reques
 
 Use the simplest clear, readable, and direct solution that fully satisfies the request. Do not add features, flexibility, or complexity that were not requested.
 
-Prioritize simplicity, readability, and directness over reusability or abstraction. Do not introduce variables, functions, helpers, types, or other abstractions unless the logic becomes very large and extremely complex or repeated many times.
+Prioritize simplicity, readability, and directness over reusability or abstraction. Do not introduce variables, functions, helpers, types, or other abstractions unless they simplify complex logic or remove substantial repetition.
 
 Use explicit logic to prevent ambiguity and implicit fallbacks. For example, prefer `if true: 1; if false: 0; else: exception` over `if true: 1; else: 0`.
 
