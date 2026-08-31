@@ -16,7 +16,7 @@ Push back when the requested approach is unnecessarily complex, risky, or incons
 
 Keep changes focused. Change only what is necessary to satisfy the user's request and produce a correct result.
 
-Use the simplest clear, readable, and direct solution that fully satisfies the request. Follow YAGNI: do not add features, flexibility, or complexity before they are needed.
+Use the simplest clear, readable, and direct solution that fully satisfies the request. Follow YAGNI principles: do not add features, flexibility, or complexity before they are needed.
 
 Prioritize simplicity, readability, and directness over reusability or abstraction. Do not introduce variables, functions, helpers, interfaces, types, or other abstractions unless they simplify complex logic or remove substantial repetition.
 
