@@ -26,7 +26,7 @@ Do not write comments unless instructed. Do not refactor, clean up, reformat, re
 
 ## Verification
 
-Do not write tests (eg, unit tests, regression tests) unless explicitly requested.
+Do not write tests (eg, unit, integration, regression, or smoke tests) unless explicitly requested.
 
 Do not run validation commands or checks unless necessary. When possible, run multiple validation commands together.
 
