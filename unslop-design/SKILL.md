@@ -5,6 +5,8 @@ description: Guards against generic AI design. Use when creating, styling, or re
 
 Do not place pills, badges, icons, or eyebrow labels above headings or titles.
 
+Do not repeat the same or similar design patterns over and over. Do not add low-quality stuff just to add variety.
+
 Do not reuse the same landing-page composition across pages, especially repeated centered sections or one-sided layouts that leave the other side empty. Do not create variety by right-aligning English text.
 
 Do not wrap every section or content item in a card, or nest cards inside cards.
