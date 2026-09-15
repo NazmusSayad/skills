@@ -3,6 +3,12 @@ name: unslop
 description: Writing guidelines for removing AI patterns and adding human voice. Use when writing, editing, or reviewing substantive content such as summaries and reports, or when the user asks to improve, simplify, or make text more concise.
 ---
 
+## Audience and purpose
+
+Identify what the audience needs to understand or accomplish, choose a form and structure that supports that goal, and write at their level. Include only the context, terminology, technical depth, and examples they need. Include implementation details only when they help achieve that goal. Ask the user only when the audience or purpose cannot be determined.
+
+Lead with the reader's needed outcome or information, then explain why when useful. Make the path to that outcome clear. Use direct language, clear headings, and the smallest useful accurate examples.
+
 ## Process
 
 1. Scan for the patterns below.
