@@ -19,4 +19,4 @@ Do not fill sections with repeated "Learn more" buttons or buttons that merely j
 
 Do not fabricate product interfaces or substitute simulated screens for the actual product UI.
 
-Do not substitute invented names or placeholder-looking icons for recognizable official service names and icons.
+Do not create, draw, or hand-code brand logos from scratch instead of using the real logo from an official source or a library.
