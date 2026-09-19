@@ -11,7 +11,7 @@ description: TypeScript best practices for clean, maintainable, and optimized co
 ## Variables
 
 - Use consistent, descriptive naming; avoid obscure abbreviations.
-- Prefer direct property access when destructuring only shortens access, even when a property is used multiple times. Destructure only when it significantly improves readability.
+- Do not use object or array destructuring in declarations, assignments, parameters, or loops; use direct property or indexed access instead, including for component props and tuple returns.
 
 ## Asynchronous
 
