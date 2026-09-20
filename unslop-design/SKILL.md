@@ -15,6 +15,8 @@ Do not leave side-by-side columns or cards with visibly unbalanced heights or la
 
 Do not use large explanatory text blocks when a small diagram would communicate the same information more clearly.
 
+Do not number sections, headings, cards, or content items by default or use numbers as decoration. Use numbering only when it serves a clear purpose for the user.
+
 Do not fill sections with repeated "Learn more" buttons or buttons that merely jump to another section.
 
 Do not fabricate product interfaces or substitute simulated screens for the actual product UI.
