@@ -53,6 +53,7 @@ Removing patterns is half the job. Sterile, voiceless writing is just as obvious
 - **Colon overuse.** Colons are fine before a list or example. Not as mid-sentence connectors. "If you're coming from traditional automation: instead of registering event handlers, you describe conditions" adds nothing with the colon. Rewrite to let the point stand on its own without comparison framing. "Describing when the scheduler should fire works best as plain English." Same meaning, no crutch punctuation.
 - **Boldface overuse.** Don't bold every proper noun or acronym.
 - **Inline-header lists.** The tell is a bold label and colon that restates the line: "**Performance:** Performance improved...". Convert those to prose. A bold lead-in that ends in a period, names the item, and is followed by genuinely new detail ("**Schema in TypeScript.** Tables live in one file.") is fine, not a tell.
+- **Unnecessary numbering.** Do not number headings, sections, or list items by default, whether in documents or replies to the user. Use numbering only when it serves a clear purpose for the reader.
 - **Title case headings.** Use sentence case.
 - **Decorative emojis.** Remove from headings and bullets.
 - **Curly quotes.** Replace with straight quotes.
