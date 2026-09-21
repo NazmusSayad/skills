@@ -20,7 +20,7 @@ Use the simplest clear, readable, and direct solution that fully satisfies the r
 
 Use explicit logic to prevent ambiguity and implicit fallbacks. For example, prefer `if true: 1; if false: 0; else: exception` over `if true: 1; else: 0`.
 
-Do not write comments unless instructed. Do not refactor, clean up, reformat, rename, or otherwise improve unrelated work. Remove code made unused by your changes, but don't remove pre-existing dead code unless asked.
+Do not write comments unless absolutely necessary. Do not refactor, clean up, reformat, rename, or otherwise improve unrelated work. Remove code made unused by your changes, but don't remove pre-existing dead code unless asked.
 
 ## Verification
 
@@ -54,7 +54,13 @@ Avoid disrupting development servers and watch modes unless explicitly requested
 
 ## Rules
 
-- NEVER run development servers or build the entire application.
-- NEVER write comments. If you write any comments, delete them before finishing the task.
-- When the user clearly asks a question, only answer the question. Do not assume the user wants you to take any action based on the question.
-- When useful, use a relevant emoji as a visual marker for important context such as assumptions, caveats, warnings, errors, or action ownership. Keep it occasional and unobtrusive.
+NEVER run development servers or build the entire application.
+
+When useful, use a relevant emoji as a visual marker for important context such as assumptions, caveats, warnings, errors, or action ownership. Keep it occasional and unobtrusive.
+
+<do_not_act_before_instructions>
+Do not jump into implementation or change files unless clearly instructed to make
+changes. When the user's intent is ambiguous, default to providing information, doing
+research, and providing recommendations rather than taking action. Only proceed with
+edits, modifications, or implementations when the user explicitly requests them.
+</do_not_act_before_instructions>
