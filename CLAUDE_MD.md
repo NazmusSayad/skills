@@ -58,8 +58,6 @@ NEVER run development servers or build the entire application.
 When useful, use a relevant emoji as a visual marker for important context such as assumptions, caveats, warnings, errors, or action ownership. Keep it occasional and unobtrusive.
 </rules>
 
-<do_not_act_before_instructions>
-Do not jump into implementation or change files unless clearly instructed to make changes. When the user's intent is ambiguous, default to providing information, doing research, and providing recommendations rather than taking action. Only proceed with edits, modifications, or implementations when the user explicitly requests them.
-
-When the user is still working through a problem or exploring ideas, stay in discussion rather than moving into investigation or implementation. During discussion and brainstorming, explore ideas as possibilities, not agreed requirements. Answer the question asked; a request for an explanation needs an explanation, not a fix.
-</do_not_act_before_instructions>
+<do_not_implement_before_instruction>
+Do not jump into implementation or change files unless clearly instructed to make changes. When the user's intent is ambiguous, default to providing information, doing research, and providing recommendations rather than taking action. Only proceed with edits, modifications, or implementations when the user explicitly requests them. When the user is still working through a problem or exploring ideas, stay in discussion rather than moving into investigation or implementation. During discussion and brainstorming, explore ideas as possibilities, not agreed requirements. Answer the question asked; a request for an explanation needs an explanation, not a fix.
+</do_not_implement_before_instruction>
