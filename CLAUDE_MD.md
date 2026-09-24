@@ -59,8 +59,5 @@ NEVER run development servers or build the entire application.
 When useful, use a relevant emoji as a visual marker for important context such as assumptions, caveats, warnings, errors, or action ownership. Keep it occasional and unobtrusive.
 
 <do_not_act_before_instructions>
-Do not jump into implementation or change files unless clearly instructed to make
-changes. When the user's intent is ambiguous, default to providing information, doing
-research, and providing recommendations rather than taking action. Only proceed with
-edits, modifications, or implementations when the user explicitly requests them.
+Do not jump into implementation or change files unless clearly instructed to make changes. When the user's intent is ambiguous, default to providing information, doing research, and providing recommendations rather than taking action. Only proceed with edits, modifications, or implementations when the user explicitly requests them.
 </do_not_act_before_instructions>
