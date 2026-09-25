@@ -1,25 +1,31 @@
 ---
 name: creative
-description: Finds distinctive ways to present or solve the requested thing instead of repeating generic patterns, while keeping required content and constraints intact.
+description: Rethinks the approach to the current task, moving beyond generic defaults to find a better solution within the user's brief.
 
 disable-model-invocation: true
 metadata: { opencode/autoinvoke: false }
 ---
 
-## Find a different approach
+## Question the framing
 
-When a result feels generic, do not just enlarge it, add decoration, or polish the same layout. Identify the repeated choice and reconsider the form: arrangement, emphasis, pacing, interaction, or representation. Choose what fits this particular content rather than starting from the same template again.
+The way a problem is framed limits which solutions appear possible. Asking how to explain a complicated workflow assumes the workflow must stay complicated. The better opportunity may be to remove a decision or make an intermediate step unnecessary. Separate the required outcome from assumptions introduced by the current solution.
 
-For related pages or scenes, vary the structure where their content calls for it. A hero need not always have the same alignment; a video scene need not always be a window that zooms in. Keep the visual language consistent without making every instance look alike. Do not force variation when sameness is required.
+Pay attention to what makes this case unusual. An awkward exception can reveal that the chosen structure is wrong. If an explanation needs constant qualifications, a different way of representing the idea may make those qualifications unnecessary.
 
-## Take ideas, not copies
+## Explore beyond refinements
 
-Study the references the user supplied for the idea behind them: what they emphasize, how they arrange information, and why they work. Adapt those ideas to the current artifact. Do not copy exact pixels, colors, components, or wording when the existing design system or content is the source of truth. Use more than one reference when a single example would lock the result into one pattern.
+Refinements improve an existing approach; alternatives change how it works. Several versions can look different while relying on exactly the same idea. When refinements keep producing the same weakness, reconsider the underlying mechanism or representation. A hierarchy, for example, can obscure relationships that a flow makes obvious.
 
-Do not treat the current draft as untouchable when exploring alternatives, but keep what already works. Try a different approach only where it solves the actual problem; a more elaborate version is not automatically more creative.
+Give an unfamiliar approach enough thought to understand its strengths before comparing it with a polished draft. Familiarity and time already invested can make the draft seem better than it is. Keep useful discoveries from earlier attempts without treating their structure as a requirement.
 
-## Keep the brief intact
+## Borrow the reasoning
 
-Creativity is freedom in *how* to deliver the requested result, not permission to change *what* was requested. Preserve required content, sequence, behavior, and constraints. Do not invent product facts, steps, logos, or features to fill a design. If the content must match across several outputs, change its presentation without quietly dropping parts.
+A useful reference shows a reason something works. Look for that reason. Progressive disclosure works when information becomes relevant at different times; copying its appearance into a task that needs simultaneous comparison can make the result worse. Ideas from another medium or domain can transfer when the underlying problem is similar.
 
-Prefer a clear, fitting idea over a flashy one. Decoration, animation, and complexity do not fix an awkward layout or a repetitive presentation on their own.
+Adapt the principle to the material. Different content may deserve different treatment, even within one consistent system. Consistency can come from shared conventions while the structure varies. Variation earns its place when it expresses a meaningful difference.
+
+## Judge the improvement
+
+Constraints help distinguish promising ideas from arbitrary ones. Required content and behavior must survive a change of approach. Simplifying by silently dropping part of the problem is a false improvement; inventing facts to support an idea is another.
+
+Look for a concrete advantage that justifies the change. Removing a source of confusion or an unnecessary dependency can matter more than visible novelty. Consider the new difficulties an idea introduces as well as the ones it resolves. A simple, familiar solution can still be the strongest choice after genuine exploration.

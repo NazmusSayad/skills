@@ -1,21 +1,27 @@
 ---
 name: value
-description: Judges whether an idea or addition makes sense for its intended audience and adds anything meaningful to the artifact they experience.
+description: Judges whether an idea, result, or proposed change makes sense and offers value to its intended audience. Improves that value when requested.
 
 disable-model-invocation: true
 metadata: { opencode/autoinvoke: false }
 ---
 
-## Judge the idea
+## Value belongs to the audience
 
-Identify the artifact and its intended audience. The audience might use a product, read a document, watch a video, or review a proposal. Ask what the addition gives *them* in that context: a clearer understanding, a useful fact, a better decision, a completed task, less effort, or a more worthwhile experience.
+Judge an idea or result by what its intended audience gets from it. A reader may need understanding, a viewer may want an engaging experience, and a product user may need to complete a task. What matters depends on their purpose, prior knowledge, and circumstances.
 
-Compare it with the artifact without the addition. If the audience would understand, decide, do, or experience essentially the same thing, the addition has no demonstrated value. Do not confuse effort spent, extra content, novelty, or polish with a benefit to the audience.
+Distinguish what interests the maker from what benefits the audience. A technically impressive demo may leave viewers with no better understanding of the product. The missing value might be a recognizable example that shows why the product matters to them.
 
-Say plainly whether the idea makes sense for this audience and why. If the benefit depends on an assumption about them, state that assumption instead of inventing a reason to keep it.
+## Judge whether it earns its place
 
-## Add value
+An idea can be coherent and well executed yet address a need this audience does not have. Look for a credible connection between what it offers and what they gain. Effort spent, novelty, and completeness do not establish that connection.
 
-Improve the named artifact for its audience, not a different one. Make what they receive more useful, clearer, more credible, or easier to act on. Prefer a real example or result over a simulated one when authenticity is what lets the audience understand or trust it.
+Weigh the benefit against the attention, effort, or confusion it introduces. More detail can help an expert make a decision while obscuring the point for a newcomer. Brevity is not inherently valuable either; removing the example that makes an explanation understandable makes it worse.
 
-Keep additions that create a meaningful difference; cut those that only make the artifact bigger. "More value" means improving this artifact's effect on its audience, not adding unrelated features or content.
+For a proposed change, compare the audience's experience with and without it. For a whole idea or result, judge whether it fulfills a worthwhile purpose for them. Ground the verdict in what is actually present. A plausible benefit may still depend on an untested assumption about the audience.
+
+## Improve the audience's outcome
+
+Find what limits the value before adding more. An unclear explanation may need a concrete example; an unconvincing claim may need evidence; a cumbersome task may need fewer steps. Adding content or features elsewhere leaves the weakness in place.
+
+Preserve what already helps. Addition, revision, and subtraction are useful when they improve what the audience receives. Prefer real examples or results when authenticity is what makes the material understandable or credible. Judge the improvement by its effect on the audience, not by the size of the change.
