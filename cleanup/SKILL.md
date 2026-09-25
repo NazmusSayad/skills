@@ -49,11 +49,8 @@ metadata: { opencode/autoinvoke: false }
 - Remove repetition, false claims, internal implementation details, filler, and sections that do not help the intended reader.
 - Do not invent features, commands, benchmarks, examples, or product behavior.
 - Do not create a README, report, migration guide, or other documentation unless requested.
-- Apply the `unslop` skill when rewriting substantive prose.
 
 ## Verification
 
-- Search for references to every removed symbol or file.
 - Confirm that cleanup did not remove required behavior or content.
-- Run only the checks needed to verify the change. Do not claim success without evidence.
 - Report only what was removed or simplified and any relevant verification result.
