@@ -1,6 +1,9 @@
 ---
 name: cleanup
-description: Simplifies code and documentation by removing unnecessary parts, flattening overcomplicated implementations, and pruning artifacts left by deletion. MUST USE when the user asks to clean up, simplify, reduce, prune, remove slop, delete dead code, or strip a project to essentials.
+description: Simplifies code and documentation by removing unnecessary parts, flattening overcomplicated implementations, and pruning artifacts left by deletion.
+
+disable-model-invocation: true
+metadata: { opencode/autoinvoke: false }
 ---
 
 ## Scope
