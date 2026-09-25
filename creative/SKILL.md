@@ -22,7 +22,7 @@ Give an unfamiliar approach enough thought to understand its strengths before co
 
 A useful reference shows a reason something works. Look for that reason. Progressive disclosure works when information becomes relevant at different times; copying its appearance into a task that needs simultaneous comparison can make the result worse. Ideas from another medium or domain can transfer when the underlying problem is similar.
 
-Adapt the principle to the material. Different content may deserve different treatment, even within one consistent system. Consistency can come from shared conventions while the structure varies. Variation earns its place when it expresses a meaningful difference.
+Adapt the principle to the material. Different content may deserve different treatment, even within one consistent system. Consistency can come from shared conventions while the structure varies. Variation can express a meaningful difference or improve rhythm and attention across similar material. Repeating the same layout or transition can make a sequence feel monotonous even when each part works on its own.
 
 ## Judge the improvement
 

@@ -26,7 +26,7 @@ Separate data construction or transformation from rendering when mixing them obs
 
 ## Clean up content
 
-Preserve facts, instructions, examples, links, routes, and details the audience needs. Cut repetition, false claims, unnecessary implementation detail, and filler. Check claims about features, commands, benchmarks, and product behavior against their sources. Keep examples accurate rather than inventing them to fill gaps.
+Preserve facts, instructions, examples, links, routes, and details the audience needs. Cut repetition, false claims, unnecessary implementation detail, and filler. Link to existing documentation when it already explains a supporting topic, while keeping enough context for the current explanation to make sense. Check claims about features, commands, benchmarks, and product behavior against their sources. Keep examples accurate rather than inventing them to fill gaps.
 
 ## Check the result
 
