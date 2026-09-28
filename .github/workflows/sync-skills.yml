@@ -1,0 +1,73 @@
+name: Sync skills from dotfiles
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-skills
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout skills repo
+        uses: actions/checkout@v4
+
+      - name: Checkout dotfiles repo
+        uses: actions/checkout@v4
+        with:
+          repository: NazmusSayad/.dotfiles
+          path: dotfiles
+          sparse-checkout: |
+            config/agents/skills
+            config/agents/AGENTS_MD.md
+            config/agents/CHATGPT_MD.md
+            config/agents/CLAUDE_MD.md
+          sparse-checkout-cone-mode: false
+
+      - name: Sync skills and agent docs
+        run: |
+          set -euo pipefail
+          SRC="dotfiles/config/agents/skills"
+          test -d "$SRC" || { echo "Source not found: $SRC"; exit 1; }
+
+          # Sync each skill: <name>/SKILL.md
+          for src_skill in "$SRC"/*/; do
+            name="$(basename "$src_skill")"
+            mkdir -p "$name"
+            cp "$src_skill/SKILL.md" "$name/SKILL.md"
+          done
+
+          # Remove local skill dirs no longer in dotfiles (mirror mode)
+          for local_skill in */SKILL.md; do
+            [ -e "$local_skill" ] || continue
+            name="$(dirname "$local_skill")"
+            if [ ! -d "$SRC/$name" ]; then
+              echo "Removing stale skill: $name"
+              rm -rf "$name"
+            fi
+          done
+
+          # Sync top-level agent docs (same filenames)
+          cp dotfiles/config/agents/AGENTS_MD.md AGENTS_MD.md
+          cp dotfiles/config/agents/CHATGPT_MD.md CHATGPT_MD.md
+          cp dotfiles/config/agents/CLAUDE_MD.md CLAUDE_MD.md
+
+      - name: Commit and push if changed
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to sync."
+            exit 0
+          fi
+          git commit -m "chore(skills): sync from dotfiles"
+          git push
