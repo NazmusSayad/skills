@@ -19,22 +19,22 @@ jobs:
       - name: Checkout skills repo
         uses: actions/checkout@v4
 
-      - name: Checkout dotfiles repo
-        uses: actions/checkout@v4
-        with:
-          repository: NazmusSayad/.dotfiles
-          path: dotfiles
-          sparse-checkout: |
-            config/agents/skills
-            config/agents/AGENTS_MD.md
-            config/agents/CHATGPT_MD.md
+      - name: Clone dotfiles to temp dir
+        run: |
+          set -euo pipefail
+          rm -rf "$RUNNER_TEMP/dotfiles"
+          git clone --depth 1 --filter=blob:none --sparse https://github.com/NazmusSayad/.dotfiles.git "$RUNNER_TEMP/dotfiles"
+          git -C "$RUNNER_TEMP/dotfiles" sparse-checkout set --no-cone \
+            config/agents/skills \
+            config/agents/AGENTS_MD.md \
+            config/agents/CHATGPT_MD.md \
             config/agents/CLAUDE_MD.md
-          sparse-checkout-cone-mode: false
 
       - name: Sync skills and agent docs
         run: |
           set -euo pipefail
-          SRC="dotfiles/config/agents/skills"
+          DOTFILES="$RUNNER_TEMP/dotfiles/config/agents"
+          SRC="$DOTFILES/skills"
           test -d "$SRC" || { echo "Source not found: $SRC"; exit 1; }
 
           # Sync each skill: <name>/SKILL.md
@@ -55,9 +55,9 @@ jobs:
           done
 
           # Sync top-level agent docs (same filenames)
-          cp dotfiles/config/agents/AGENTS_MD.md AGENTS_MD.md
-          cp dotfiles/config/agents/CHATGPT_MD.md CHATGPT_MD.md
-          cp dotfiles/config/agents/CLAUDE_MD.md CLAUDE_MD.md
+          cp "$DOTFILES/AGENTS_MD.md" AGENTS_MD.md
+          cp "$DOTFILES/CHATGPT_MD.md" CHATGPT_MD.md
+          cp "$DOTFILES/CLAUDE_MD.md" CLAUDE_MD.md
 
       - name: Commit and push if changed
         run: |
