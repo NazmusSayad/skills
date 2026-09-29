@@ -24,40 +24,31 @@ jobs:
           set -euo pipefail
           rm -rf "$RUNNER_TEMP/dotfiles"
           git clone --depth 1 --filter=blob:none --sparse https://github.com/NazmusSayad/.dotfiles.git "$RUNNER_TEMP/dotfiles"
-          git -C "$RUNNER_TEMP/dotfiles" sparse-checkout set --no-cone \
-            config/agents/skills \
-            config/agents/AGENTS_MD.md \
-            config/agents/CHATGPT_MD.md \
-            config/agents/CLAUDE_MD.md
+          git -C "$RUNNER_TEMP/dotfiles" sparse-checkout set --no-cone config/agents/skills
 
-      - name: Sync skills and agent docs
+      - name: Sync skills
         run: |
           set -euo pipefail
           DOTFILES="$RUNNER_TEMP/dotfiles/config/agents"
           SRC="$DOTFILES/skills"
           test -d "$SRC" || { echo "Source not found: $SRC"; exit 1; }
 
-          # Sync each skill: <name>/SKILL.md
+          # Sync each skill: skills/<name>/SKILL.md
           for src_skill in "$SRC"/*/; do
             name="$(basename "$src_skill")"
-            mkdir -p "$name"
-            cp "$src_skill/SKILL.md" "$name/SKILL.md"
+            mkdir -p "skills/$name"
+            cp "$src_skill/SKILL.md" "skills/$name/SKILL.md"
           done
 
           # Remove local skill dirs no longer in dotfiles (mirror mode)
-          for local_skill in */SKILL.md; do
+          for local_skill in skills/*/SKILL.md; do
             [ -e "$local_skill" ] || continue
-            name="$(dirname "$local_skill")"
+            name="$(basename "$(dirname "$local_skill")")"
             if [ ! -d "$SRC/$name" ]; then
               echo "Removing stale skill: $name"
-              rm -rf "$name"
+              rm -rf "skills/$name"
             fi
           done
-
-          # Sync top-level agent docs (same filenames)
-          cp "$DOTFILES/AGENTS_MD.md" AGENTS_MD.md
-          cp "$DOTFILES/CHATGPT_MD.md" CHATGPT_MD.md
-          cp "$DOTFILES/CLAUDE_MD.md" CLAUDE_MD.md
 
       - name: Commit and push if changed
         run: |
