@@ -24,12 +24,12 @@ jobs:
           set -euo pipefail
           rm -rf "$RUNNER_TEMP/dotfiles"
           git clone --depth 1 --filter=blob:none --sparse https://github.com/NazmusSayad/.dotfiles.git "$RUNNER_TEMP/dotfiles"
-          git -C "$RUNNER_TEMP/dotfiles" sparse-checkout set --no-cone config/agents/skills
+          git -C "$RUNNER_TEMP/dotfiles" sparse-checkout set --no-cone agents/skills
 
       - name: Sync skills
         run: |
           set -euo pipefail
-          DOTFILES="$RUNNER_TEMP/dotfiles/config/agents"
+          DOTFILES="$RUNNER_TEMP/dotfiles/agents"
           SRC="$DOTFILES/skills"
           test -d "$SRC" || { echo "Source not found: $SRC"; exit 1; }
 
