@@ -29,26 +29,10 @@ jobs:
       - name: Sync skills
         run: |
           set -euo pipefail
-          DOTFILES="$RUNNER_TEMP/dotfiles/agents"
-          SRC="$DOTFILES/skills"
+          SRC="$RUNNER_TEMP/dotfiles/agents/skills"
           test -d "$SRC" || { echo "Source not found: $SRC"; exit 1; }
-
-          # Sync each skill: skills/<name>/SKILL.md
-          for src_skill in "$SRC"/*/; do
-            name="$(basename "$src_skill")"
-            mkdir -p "skills/$name"
-            cp "$src_skill/SKILL.md" "skills/$name/SKILL.md"
-          done
-
-          # Remove local skill dirs no longer in dotfiles (mirror mode)
-          for local_skill in skills/*/SKILL.md; do
-            [ -e "$local_skill" ] || continue
-            name="$(basename "$(dirname "$local_skill")")"
-            if [ ! -d "$SRC/$name" ]; then
-              echo "Removing stale skill: $name"
-              rm -rf "skills/$name"
-            fi
-          done
+          rm -rf skills
+          cp -R "$SRC" skills
 
       - name: Commit and push if changed
         run: |
