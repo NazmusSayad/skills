@@ -1,0 +1,7 @@
+interface:
+  display_name: "HTML"
+  short_description: "Turn existing material into polished HTML"
+  default_prompt: "Use $html to turn this material into a polished HTML document."
+
+policy:
+  allow_implicit_invocation: false
