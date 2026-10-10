@@ -46,7 +46,7 @@ Use force deliberately. Reserve absolute language for hard requirements and expr
 
 Every instruction needs a basis in the intended outcome, actual environment, domain, or evidence from use. A brief reason can help the agent apply a broad rule to situations the writer cannot predict. Do not add explanations for concepts the agent already understands unless the explanation changes how it should decide.
 
-Prefer a positive selection principle over a catalog of prohibitions. Name a failure mode when it is plausible, consequential, and not already prevented by clearer guidance. Add personas, procedures, tool rules, schemas, examples, or review steps only when they materially improve the intended behavior.
+Name a failure mode when it is plausible, consequential, and not already prevented by clearer guidance. Add personas, procedures, tool rules, schemas, examples, or review steps only when they materially improve the intended behavior.
 
 ## Let form follow purpose
 
@@ -63,3 +63,7 @@ Creating a prompt requires recovering the intended behavior and choosing the rig
 Evaluate the prompt according to its job. Use real or representative inputs and outputs for narrow task prompts when practical. Review broad skills and durable instructions through varied situations, competing interpretations, boundaries, and conflicts. Check whether the right material loads, the agent preserves the intended behavior, and required work reaches its completion criteria. A finite set of cases cannot prove how a nondeterministic agent will behave in every future context.
 
 Do not turn one failure or successful fix into a universal rule without evidence of a broader pattern. Every instruction should have a clear behavioral purpose grounded in intent, context, scope, or evidence. Remove anything that cannot meet that test.
+
+## Writing a skill
+
+A skill is a prompt too, so everything above applies. The description of an automatically invoked skill has two sentences: the first says what the skill is, and the second names the situations that need it. The description of a manually invoked skill is one sentence that says what the skill does. When a skill grows out of real work, keep what generalizes to the whole class of tasks and leave out the details of the work it came from.
