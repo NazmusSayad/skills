@@ -1,4 +1,0 @@
-interface:
-  display_name: "ttyd"
-  short_description: "Terminal in the browser"
-  default_prompt: "Use $ttyd to open a terminal in the browser."
