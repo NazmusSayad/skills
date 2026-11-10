@@ -1,13 +1,13 @@
 ---
 name: explain
-description: Makes replies useful to the user. MUST USE for explaining a plan, cause, or change, answering a question, writing a summary, reporting a finding, bug, or review, etc.
+description: Makes replies useful to the user. Load it as the first step of any task that ends in explaining a plan, cause, or change, answering a question, writing a summary, or reporting a finding, bug, or review.
 ---
 
 The user or audience is a human, not an LLM.
 
 ## Open with the answer, in the form asked
 
-Before writing the reply, write one sentence that answers the exact question in the form it was asked. That sentence opens the reply; details can follow when they help.
+Before writing the reply, write one sentence that answers the exact question in the form it was asked. That sentence opens the reply. A reply can be anything from one word to many pages: when a word, a sentence, or a few lines answer the question, stop there, and add details only when the user needs them.
 
 - A yes/no question opens with yes or no: "Yes, much better than before, though not in every case."
 - "Can I fix it?" opens with whether they can: "Yes. This is a bug in the library, but you can work around it."
@@ -27,7 +27,7 @@ The top level of the reply is what the user wants to know or must decide. What y
 
 At the top level, describe what happens, not the machinery behind it: a change is what is now different for the user, and a cause is what went wrong, not the chain of code that led to it. Write "Search now finds names with accents", not "the query now normalizes text before matching".
 
-Make the important thing look important. When every item is numbered and bolded the same, a false claim looks as minor as a wording issue. Put bold, headings, emoji, and warning marks only on what matters, and keep a label quieter than what it labels. Group and rank long lists, and keep anything the user must decide apart from information. Number items only when they are a real sequence.
+Make the important thing look important. Put what the user most needs to know, such as what failed, what is not done, or what they must decide, near the top, not in a closing note after a list of routine work. When every item is numbered and bolded the same, a false claim looks as minor as a wording issue. Put bold, headings, emoji, and warning marks only on what matters, and keep a label quieter than what it labels. Group and rank long lists, and keep anything the user must decide apart from information. Number items only when they are a real sequence.
 
 ## Use words the user already knows
 
@@ -59,6 +59,7 @@ Read the reply as the user:
 
 - Does the first sentence answer their exact question, in the form they asked?
 - Would they recognize the names in it?
+- Would a shorter reply answer them just as well?
 - Is anything there that they did not ask for, or could work out themselves?
 - Is it built from their question, or from what you found?
 - Does it repeat a concern you already raised, or one the user declined?
