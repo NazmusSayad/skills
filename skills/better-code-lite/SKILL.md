@@ -1,10 +1,14 @@
 ---
-name: cleanup
+name: better-code-lite
 description: Removes unnecessary code and content, simplifies what remains, and clears out the leftovers without losing required behavior or details.
 
 disable-model-invocation: true
 metadata: { opencode/autoinvoke: false }
 ---
+
+## Working scope
+
+Understand the scope before you do anything else. The scope can be a PR, a commit, a branch, specific files or folders, or the whole repository. If the user did not state the scope, or the request can mean more than one scope, ask the user and wait for the answer. Do not guess. Then work only inside that scope.
 
 ## Remove unnecessary parts
 
