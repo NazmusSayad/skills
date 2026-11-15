@@ -8,7 +8,7 @@ metadata: { opencode/autoinvoke: false }
 
 ## Working scope
 
-Understand the scope before you do anything else. The scope can be a PR, a commit, a branch, specific files or folders, or the whole repository. If the user did not state the scope, or the request can mean more than one scope, ask the user and wait for the answer. Do not guess. Then work only inside that scope.
+Understand the scope before you do anything else. The scope can be a PR, a commit, a branch, specific files or folders, or the whole repository. If the user did not state the scope, default to the changes made in the current chat. If the scope is unclear, ask the user and wait for the answer. Do not guess. Then work only inside that scope.
 
 ## Goal
 
@@ -32,7 +32,7 @@ Ask how you would build the same behavior from the start with what you know now.
 - Several places merge or filter the same data in their own way. Do it in one place.
 - Separate kinds, events, or types exist for cases that one general rule covers.
 - A lookup, query, or subscription exists only to feed another step that could get the value directly.
-- Code repeated across implementations, such as providers or handlers, does the same work. Share it when that removes real repetition.
+- Logic repeated across implementations, such as providers or handlers, does the same work. Share the logic, not code that only looks the same.
 - A layer, wrapper, or indirection only forwards to another.
 
 Before you keep a mechanism, find out why it exists. Code that looks unnecessary often protects behavior, such as an instant open from a cache, an optimistic update, or a provider difference. Keep it when removing it would change behavior.
